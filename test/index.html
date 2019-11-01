@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>إبدأ الإختبار</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body style="background-color:#ddd" id="dody">
+        <!----------------------------------------------------- HEADER PART ------------------------------------------------------>
+        <div class="header">
+                <h1>
+                    <span id="1" onmouseover = "paint()" onmouseout = 'out()'>science</span> 
+                    <span id="2" onmouseover = "paint()" onmouseout = 'out()'>is </span> 
+                    <span id="3" onmouseover = "paint()" onmouseout = 'out()'>life</span> 
+                </h1>
+        </div>
+        <div class="otherheader"><img src="../images/backpage.jpg" onclick="window.location = '../index.html'" /></div>
+        
+        <!---------------------------------------------- TEST PART -------------------------------------------------------->
+        
+        <div class="test">
+            <h1>الإختبار</h1>
+            <div id="question" class="question">
+                <span id="theQuestion"></span>
+                <button id="ans1"></button>
+                <button id="ans2"></button>
+                <button id="ans3"></button>
+                <button id="correct"></button>
+            </div>
+            <div id="levels" class="levels">
+                <img id="image" />
+                <span id="theLevel"></span>
+                <button id="next">Next</button>
+            </div>
+        </div>
+        
+        <script src="../js/testjs.js"></script>
+    </body>
+</html>

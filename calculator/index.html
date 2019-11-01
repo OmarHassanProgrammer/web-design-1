@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>الآلة الحاسبة</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body style="background-color:#ddd" id="dody">
+        <!----------------------------------------------------- HEADER PART ------------------------------------------------------>
+        <div class="header">
+                <h1>
+                    <span id="sp1" onmouseover = "paint()" onmouseout = 'out()'>science</span> 
+                    <span id="sp2" onmouseover = "paint()" onmouseout = 'out()'>is </span> 
+                    <span id="sp3" onmouseover = "paint()" onmouseout = 'out()'>life</span> 
+                </h1>
+        </div>
+        <div class="otherheader"><img src="../images/backpage.jpg" onclick="window.location = '../index.html'" /></div>
+        <!---------------------------------------------------- CALCULATE PART ------------------------------------------------------>
+        <div class="calculate">
+            <table>
+                <tr>
+                    <td></td>
+                    <td colspan="2">Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="text" id="textBox" readonly/></td>
+                </tr>
+                <tr>
+                    <td><select id="saveSelect">
+                            <option value='none'>Save</option>
+                            <option value='1'>Save 1</option>
+                            <option value='2'>Save 2</option>
+                            <option value='3'>Save 3</option>
+                            <option value='4'>Save 4</option>
+                            <option value='5'>Save 5</option>
+                            <option value='6'>Save 6</option>
+                            <option value='7'>Save 7</option>
+                            <option value='8'>Save 8</option>
+                            <option value='9'>Save 9</option>
+                            <option value='10'>Save 10</option>
+                        </select></td>
+                    <td><select id="loadSelect">
+                            <option value="none">Load</option>
+                            <option value="1">Load 1</option>
+                            <option value="2">Load 2</option>
+                            <option value="3">Load 3</option>
+                            <option value="4">Load 4</option>
+                            <option value="5">Load 5</option>
+                            <option value="6">Load 6</option>
+                            <option value="7">Load 7</option>
+                            <option value="8">Load 8</option>
+                            <option value="9">Load 9</option>
+                            <option value="10">Load 10</option>
+                        </select></td>
+                    <td><button id="c">C</button></td>
+                    <td><button id="delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td><button id="mod">Mod</button></td>
+                    <td><button id="pow">Pow</button></td>
+                    <td><button id="/">%</button></td>
+                    <td><button id="*">x</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1">1</button></td>
+                    <td><button id="2">2</button></td>
+                    <td><button id="3">3</button></td>
+                    <td><button id="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4">4</button></td>
+                    <td><button id="5">5</button></td>
+                    <td><button id="6">6</button></td>
+                    <td><button id="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="7">7</button></td>
+                    <td><button id="8">8</button></td>
+                    <td><button id="9">9</button></td>
+                    <td rowspan="2" id="="><button>=</button></td>
+                </tr>
+                <tr>
+                    <td><button id=",">,</button></td>
+                    <td><button id="0">0</button></td>
+                    <td><button id="00">00</button></td>
+                </tr>
+            </table>
+        </div>
+        
+        <script src="../js/claculatejs.js"></script>
+    </body>
+</html>

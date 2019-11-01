@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>سجل بياناتك</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+    <body style="background-color:#ddd" id="dody">
+        <!----------------------------------------------------- HEADER PART ------------------------------------------------------>
+        <div class="header">
+                <h1>
+                    <span id="1" onmouseover = "paint()" onmouseout = 'out()'>science</span> 
+                    <span id="2" onmouseover = "paint()" onmouseout = 'out()'>is </span> 
+                    <span id="3" onmouseover = "paint()" onmouseout = 'out()'>life</span> 
+                </h1>
+        </div>
+        <div class="otherheader"><img src="../images/backpage.jpg" onclick="window.location = '../index.html'" /></div>
+        
+        <!------------------------------------------------------- FORM PART ------------------------------------------------------->
+        
+        <div class="register">
+            <form>
+                <div class="inputs">
+                    <table>
+                        <tr> 
+                            <td> <input type="text" placeholder="اكتب اسمك هنا" id="theName1" />           </td> <td> <span>: الاسم</span> </td>
+                        </tr>
+                        <tr> 
+                            <td> <input type="text" placeholder="اكتب رقم هاتفك هنا" id="thePhone1"/>         </td> <td> <span>: رقم الهاتف</span> </td>
+                        </tr>   
+                        <tr> 
+                            <td> <select id="theAge"></select> </td>                                  <td> <span>: السن</span> </td>
+                        </tr>
+                        <tr> 
+                            <td> <input type="text" placeholder="اكتب وظيفتك هنا" id="theJop1"/> </td>       <td> <span>: المهنة</span> </td>
+                        </tr>
+                        <tr> 
+                            <td><input type="text" placeholder="اكتب جنسيتك هنا" id="theNationality1"/></td>  <td> <span>: الجنسية</span> </td>
+                        </tr>
+                        <tr> 
+                            <td> <radio>  ذكر <input type="radio" name="gender" value="male"/> </radio>              
+                                <radio> أنثي <input type="radio" name="gender" value="female"/></radio> </td>          <td> <span>: النوع</span> </td>
+                        </tr>
+                        <tr> 
+                            <td> <select id="theSubject">
+                                    <option value=""></option>
+                                    <optgroup label="علمي">
+                                        <option value="maths">رياضيات</option>
+                                        <option value="chemical">كيمياء</option>
+                                        <option value="Ahiaa">أحياء</option>
+                                        <option value="falak">فلك</option>
+                                        <option value="fiziaa">فيزياء</option>
+                                        <option value="engineering">هندسة</option>
+                                    </optgroup>
+
+                                    <optgroup label="أدبي">
+                                        <option value="arabic">عربي</option>
+                                        <option value="history">تاريخ</option>
+                                        <option value="geography">جغرافيا</option>
+                                        <option value="english">إنجليزي</option>
+                                        <option value="french">فرنسي</option>
+                                        <option value="Din">تربية دينية</option>
+                                    </optgroup>
+                                </select>                                    </td> <td> <span>: مادتك المفضلة</span> </td>
+                        </tr>
+                        <tr> 
+                            <td> <input type="text" placeholder="ما هي هوايتك ؟" id="theHobby1"/> </td>       <td> <span>: الهواية</span> </td>
+                        </tr>
+                        <tr> 
+                            <td> <input type="password" placeholder="رقمك السري" id="thePassword"/> </td>   <td> <span>: الرقم السري</span> </td>
+                        </tr>
+                        <tr> 
+                        <td> <input type="password" placeholder="تأكيد رقمك السري" id="theConfirm"/> </td>  <td> <span>: تأكيد الرقم السري</span> </td>
+                        </tr>
+                    </table>  
+                </div>
+                <!-------------------->
+                <div class="checks">
+                    <ul id="checkslist"></ul>
+                </div>
+                <!-------------------->
+                <div class="btns">
+                    <table>
+                        <tr>
+                            <td> <input type="reset" value="إعادة" /> </td>
+                            <td> <input type="button" value="تسجيل" id="submit"/> </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>        
+        </div>
+        
+        <script src="../js/registerjs.js"></script>
+    </body>
+</html>
