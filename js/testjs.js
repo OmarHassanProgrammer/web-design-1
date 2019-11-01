@@ -33,7 +33,7 @@ function out() {
     
     "use strict";
     
-    tit1.style.color = "#7a7a7a";
+    tit1.style.color = "#ff0";
     
     tit2.style.color = "#aaa";
     
